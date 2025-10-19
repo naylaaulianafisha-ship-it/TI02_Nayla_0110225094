@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak | Website Nayla</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f9fbff;
+      margin: 0;
+      padding: 20px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 500px;
+      margin: 0 auto;
+      background-color: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    }
+    input, textarea {
+      padding: 10px;
+      font-size: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    input:focus, textarea:focus {
+      outline: none;
+      border-color: #5c80bc;
+      box-shadow: 0 0 5px rgba(92,128,188,0.4);
+    }
+    button {
+      background-color: #5c80bc;
+      color: white;
+      font-weight: bold;
+      border: none;
+      padding: 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background-color: #466a9b;
+    }
+    .contact-info {
+      text-align: center;
+      margin-top: 20px;
+      color: #003566;
+    }
+  </style>
+</head>
+<body>
+
+  <header style="text-align:center; margin-bottom:20px;">
+    <h1>Hubungi Aku 💬</h1>
+    <p>Kalau kamu mau tanya seputar tugas, coding, atau kolaborasi — isi form di bawah ya!</p>
+  </header>
+
+  <form action="#" method="post">
+    <label for="nama">Nama Lengkap</label>
+    <input type="text" id="nama" name="nama" placeholder="Masukkan nama kamu..." required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="contoh@email.com" required>
+
+    <label for="pesan">Pesan</label>
+    <textarea id="pesan" name="pesan" rows="5" placeholder="Tulis pesanmu di sini..." required></textarea>
+
+    <button type="submit">Kirim Pesan 🚀</button>
+  </form>
+
+  <div class="contact-info">
+    <p>Atau hubungi aku lewat:</p>
+    <p>📧 Email: <a href="mailto:naylaa@example.com">naylaa@example.com</a></p>
+    <p>📱 Instagram: <a href="https://instagram.com/" target="_blank">@naylaa.dev</a></p>
+  </div>
+
+  <footer style="text-align:center; margin-top:30px; color:#003566;">
+    <p>&copy; 2025 Nayla Aulia Nafisha | STT Terpadu Nurul Fikri</p>
+  </footer>
+</body>
+</html>

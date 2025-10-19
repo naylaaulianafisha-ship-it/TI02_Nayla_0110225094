@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Nayla Aulia Nafisha</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9fbff;
+      display: grid;
+      grid-template-areas:
+        "header header"
+        "article aside"
+        "footer footer";
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: auto 1fr auto;
+      min-height: 100vh;
+    }
+    header {
+      grid-area: header;
+      background-color: #5c80bc;
+      color: white;
+      text-align: center;
+      padding: 30px 10px;
+    }
+    article {
+      grid-area: article;
+      padding: 30px;
+    }
+    aside {
+      grid-area: aside;
+      background-color: #eef2ff;
+      padding: 20px;
+      text-align: center;
+    }
+    footer {
+      grid-area: footer;
+      background-color: #5c80bc;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+    }
+    .biodata {
+      background-color: white;
+      border-radius: 15px;
+      padding: 25px;
+      margin-bottom: 25px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    }
+    .biodata img {
+      float: left;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-right: 20px;
+      object-fit: cover;
+    }
+    .biodata p {
+      line-height: 1.6;
+    }
+    section {
+      background-color: white;
+      border-radius: 15px;
+      padding: 25px;
+      margin-bottom: 25px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    }
+    aside img {
+      width: 90%;
+      border-radius: 12px;
+      margin-bottom: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+    video {
+      width: 100%;
+      border-radius: 12px;
+      margin-top: 10px;
+    }
+    a.download {
+      display: inline-block;
+      background-color: #003566;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 10px;
+      transition: 0.3s;
+    }
+    a.download:hover {
+      background-color: #001d3d;
+    }
+    @media (max-width: 768px) {
+      body {
+        grid-template-areas:
+          "header"
+          "article"
+          "aside"
+          "footer";
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Profil Nayla Aulia Nafisha 🌸</h1>
+    <p>Mahasiswi Teknik Informatika | STT Terpadu Nurul Fikri</p>
+  </header>
+
+  <article>
+    <div class="biodata">
+      <img src="nayla (1).jpeg" alt="Foto Nayla">
+      <h2>Biodata Singkat</h2>
+      <p><strong>Nama:</strong> Nayla Aulia Nafisha</p>
+      <p><strong>NIM:</strong> 0110225094</p>
+      <p><strong>Program Studi:</strong> Teknik Informatika</p>
+      <p><strong>Kampus:</strong> STT Terpadu Nurul Fikri</p>
+      <p><strong>Hobi:</strong> Ngoding santai sambil denger musik, desain web, dan hunting foto estetik ☕</p>
+      <div style="clear: both;"></div>
+    </div>
+
+    <section>
+      <h2>About Me</h2>
+      <p>
+        Hai! Aku Nayla, mahasiswa semester awal di STT Terpadu Nurul Fikri.  
+        Sekarang lagi semangat banget belajar tentang dunia <em>web programming</em> — 
+        dari bikin tampilan estetik pakai HTML & CSS, sampai mulai paham sedikit tentang JavaScript.
+      </p>
+      <p>
+        Selain ngoding, aku suka hal-hal kreatif kayak desain UI dan edit foto.  
+        Buatku, bikin web itu kayak bikin karya seni versi digital — harus seimbang antara logika dan rasa.  
+        Kalau lagi butuh inspirasi, aku biasanya nongkrong di coffee shop sambil buka Figma dan playlist lo-fi 🎧.
+      </p>
+    </section>
+
+    <section>
+      <h2>Download File</h2>
+      <p>Kamu bisa mengunduh CV aku lewat tombol di bawah ini:</p>
+      <a href="cv_nayla.pdf" class="download" download>📄 Download CV Saya</a>
+    </section>
+  </article>
+
+  <aside>
+    <h3>📸 Galeri Foto</h3>
+    <img src="nayla (3).jpeg" alt="Coding setup">
+    <img src="nayla (4).jpeg" alt="Kampus vibes">
+    <img src="nayla (2).jpeg" alt="Coffee and laptop">
+
+    <h3>🎬 Video Aktivitas</h3>
+<video controls autoplay muted loop style="border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
+  <source src="video_nayla.mp4" type="video/mp4">
+  Browser kamu tidak mendukung pemutaran video.
+</video>
+
+
+
+  <footer>
+    <p>&copy; 2025 Nayla Aulia Nafisha | STT-NF | Praktikum 4 - Web Programming</p>
+  </footer>
+
+</body>
+</html>
