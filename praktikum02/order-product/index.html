@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Nayla Store 🛍️ | Pemesanan Barang</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3144/3144456.png" type="image/x-icon">
+</head>
+
+<body>
+  <div id="container-form-order">
+    <div class="title-form-box">
+      <h3 class="title-form">🛒 Nayla Store | Form Pemesanan Barang</h3>
+      <p class="desc-form">Belanja produk favoritmu secara online dengan cepat dan mudah!</p>
+    </div>
+
+    <form action="output.php" method="post" id="form-order-barang">
+      <div class="input-group">
+        <label for="nama">Nama Lengkap:</label>
+        <input type="text" id="nama" name="nama" required placeholder="Masukkan nama kamu">
+      </div>
+
+      <div class="input-group">
+        <label for="alamat">Alamat Lengkap:</label>
+        <textarea id="alamat" name="alamat" rows="3" required placeholder="Masukkan alamat pengiriman"></textarea>
+      </div>
+
+      <div class="input-group">
+        <label for="telepon">Nomor Telepon:</label>
+        <input type="tel" id="telepon" name="telepon" required placeholder="Contoh: 08123456789">
+      </div>
+
+      <div class="input-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Masukkan email aktif">
+      </div>
+
+      <div class="input-group">
+        <label for="barang">Pilih Barang:</label>
+        <select id="barang" name="barang" required>
+          <option value="">-- Pilih Barang --</option>
+          <option value="Tumbler Lucu">Tumbler Lucu 💧</option>
+          <option value="Totebag Canvas">Totebag Canvas 👜</option>
+          <option value="Kaos Oversize">Kaos Oversize 👕</option>
+          <option value="Notebook Aesthetic">Notebook Aesthetic 📒</option>
+          <option value="Phone Case Custom">Phone Case Custom 📱</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <label for="jumlah">Jumlah:</label>
+        <input type="number" id="jumlah" name="jumlah" min="1" max="10" value="1" required>
+      </div>
+
+      <div class="input-group">
+        <label for="catatan">Catatan Tambahan:</label>
+        <textarea id="catatan" name="catatan" rows="3" placeholder="Warna, ukuran, atau catatan lain..."></textarea>
+      </div>
+
+      <div class="button-group">
+        <button type="submit" name="submit">Kirim Pesanan 💌</button>
+        <button type="reset" name="reset">Reset</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,130 @@
+/* === GEN Z PIZZA FORM STYLE === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ffd6e0, #fff4d2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#container-form-order-pizza {
+  background-color: white;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  padding: 30px;
+}
+
+.title-form-box {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.title-form {
+  color: #e63946;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.description-form {
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.form-box p {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-size: 14px;
+  color: #444;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #e63946;
+  outline: none;
+}
+
+#pizza-specs {
+  background-color: #fff7f9;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#pizza-specs-title {
+  font-weight: 600;
+  color: #e63946;
+  margin-bottom: 8px;
+}
+
+#pizza-crust-field,
+#toppings-field,
+#quantity-field {
+  margin-top: 10px;
+}
+
+button {
+  background-color: #e63946;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #b81c30;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+button[type="reset"] {
+  background-color: #f5b971;
+}
+
+button[type="reset"]:hover {
+  background-color: #f29e4c;
+}
+
+@media (max-width: 600px) {
+  #container-form-order-pizza {
+    width: 95%;
+    padding: 20px;
+  }
+}
